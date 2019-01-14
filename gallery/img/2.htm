@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<title>
+		Доступ ограничен		:: МГТС	</title>
+				<link rel="shortcut icon" href="http://mgts.ru/favicon.jpg" />
+		<style type="text/css">
+	@font-face {
+		font-family: 'CharterC';
+		src: url('/font/chr55.eot');
+		src: url('/font/chr55.eot?#iefix') format('embedded-opentype'),
+				 url('/font/chr55.woff') format('woff'),
+				 /*url('/font/chr55.ttf') format('truetype'),*/
+				 url('/font/chr55.svg#chr55') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family:'CharterC';
+		background:#fff;
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	.main {
+		min-height: 100%;
+		padding:0 50px;
+		width:815px;
+        margin: 0 auto;
+	}
+
+	* html .main {
+		height: 100%;
+	}
+
+	.hFooter {
+		height: 334px;
+	}
+
+	.footer {
+		height: 334px;
+		margin-top: -334px;
+	}
+
+	.footer-img {
+		width:100%;
+	}
+
+	.header, a, .phone, .wrap_opener, .tariff_opener {
+		color: #007DB8;
+	}
+
+	.wrap_opener, .tariff_opener {
+		border-bottom:1px dashed;
+		cursor:pointer;
+	}
+
+	.tariff_opener {
+		border-bottom-style:dotted;
+	}
+
+	.articles {
+		height:4em;
+	}
+
+	.header {
+		font-size:4.4em;
+		margin:0 0 .3em;
+		padding:2em 0 0;
+	}
+
+	.logo {
+		position:absolute;
+		margin:12px 0 0 -236px;
+	}
+
+	.text {
+		font-size: 1.5em;
+		line-height: 1.75em;
+		margin: 0 0 1em;
+	}
+
+	.step {
+		height: 47px;
+		background: #007db8 url('/upload/images/f/1/filter/arrow.png') no-repeat 100% 0;
+		width: 126px;
+		color: #fff;
+		font-size: 1.25em;
+		position: absolute;
+		margin: -5px 0 0 -143px;
+		line-height: 47px;
+		padding: 0 0 0 11px;
+	}
+
+	.steps {
+		padding: .6em 0 0 142px;
+		line-height: 1.6em;
+	}
+
+	.phone {
+		white-space:nowrap;
+	}
+
+	.phone i {
+		font-style:normal;
+		font-size:1.3em;
+	}
+
+	.tar_line {
+		display:block;
+		white-space:nowrap;
+	}
+
+	.tariff_menu {
+		display:inline-block;
+		position:relative;
+	}
+
+	.tariff_menu_active {
+		padding:10px 0 0;
+		margin:-10px -35px 0 -24px;
+	}
+
+	.tariff_menu_active .tariff_opener {
+		position:relative;
+		z-index:2;
+		margin:0 0 0 24px;
+	}
+
+	.tariff_submenu {
+		display:none;
+		position:absolute;
+		top:.1em;
+		left:0;
+		z-index:1;
+		padding:2em 35px 15px 24px;
+		background:#fff;
+		background-origin: padding-box, border-box;
+		background-clip: padding-box, border-box;
+		border: 2px solid transparent;
+		box-shadow: inset 0 0 0 20px rgba(255,255,255,0.5), 0 3px 9px 1px rgba(1,35,74,0.5);
+		background-image: linear-gradient(bottom, #ffffff, #ffffff 50%), linear-gradient(bottom, #0177b1, #49a5d1);
+		background-image: -o-linear-gradient(bottom, #ffffff, #ffffff 50%), -o-linear-gradient(bottom, #0177b1, #49a5d1);
+		background-image: -ms-linear-gradient(bottom, #ffffff, #ffffff 50%), -ms-linear-gradient(bottom, #0177b1, #49a5d1);
+		background-image: -moz-linear-gradient(bottom, #ffffff, #ffffff 50%), -moz-linear-gradient(bottom, #0177b1, #49a5d1);
+		background-image: -webkit-linear-gradient(bottom, #ffffff, #ffffff 50%), -webkit-linear-gradient(bottom, #0177b1, #49a5d1);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+
+	.tariff_menu_active .tariff_submenu {
+		/*display:block;*/
+	}
+
+	.tariff_submenu_line {
+		display:inline-block;
+		height:1px;
+		background:#dcdcdc;
+		border-bottom:1px solid #fff;
+		position:absolute;
+		left:6px;
+		right:3px;
+		margin:-10px 0 0;
+	}
+
+	.tariff_submenu a {
+		float:left;
+		clear:both;
+		white-space:nowrap;
+		font-size:.7em;
+		display:inline-block;
+		margin:0 0 7px;
+	}
+
+	.tariff_menu .pseudo
+	{
+		color:#004eb8;
+		border-bottom:1px dotted;
+		cursor:pointer;
+
+	}
+
+	.tariff_menu_active .pseudo {
+		border:none;
+		color:#000;
+		margin:0 35px 0 24px;
+		cursor:default;
+		position:relative;
+		z-index:2;
+	}
+</style>
+<!--[if IE]>
+<style>
+.tariff_submenu {
+	border-color:#49a5d1;
+}
+</style>
+<![endif]-->
+	<script type="text/javascript" src="/common/static/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/common/static/js/jquery.cookie.js"></script>
+</head>
+
+<body class="blocked"  style="color:#000;font-family:Verdana,Arial;font-size:16px;">
+
+<div id="content" class="main">
+<h1 style="margin: 0px 0px 21px; color: rgb(0, 102, 204); font-size: 20px; line-height: 22px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><br />
+<br>
+		<img alt="" src="/img/mgts.png" />
+</h1><!-- jf28dkd -->
+<div style="
+  color:#2983cb;
+  font-size:30px;
+  margin-top:48px;">Доступ ограничен</div>
+<p style="margin: 30px 0px 20px; font-size: 16px; line-height: 22px; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+    Ресурс <b>http://lowbird.com</b> заблокирован, т.к. относится к категориям/категории: <b>Сайты для взрослых</b>.
+    <br /><br />
+	<span id="complaintContainer" style="display: none;">
+		Вы можете
+		<a href="javascript:void(0)" id="complaint">сообщить</a>, что этот сайт заблокирован по ошибке.
+	</span>
+	<span id="loading" style="display: none;">
+		Спасибо, ваше сообщение будет рассмотрено в ближайшее время.
+		<!--<img src="/common/static/img/spinner.gif" alt="Сохранение..." title="Сохранение..." />-->
+	</span>
+</p>
+<script type="text/javascript">
+	var sid = '3f289002b943851cc4e3fa878bbd07a4';
+
+	if (!$.cookie("blockedSite_" + sid))
+		$('#complaintContainer').show();
+
+	$('#complaint').click(function() {
+		$('#complaintContainer').remove();
+		$('#loading').show();
+
+		$.post(
+			'/?area=makeComplaint&action=add',
+			{
+				ajax: 1,
+				siteId: 8131100,
+				url: 'http://lowbird.com',
+				blacklistedType: 1,
+				description: ''
+			},
+			function (response)
+			{
+				var date = new Date();
+				date.setTime(date.getTime() + (60 * 60 * 1000));
+
+				var params = { expires: date };
+				$.cookie("blockedSite_3f289002b943851cc4e3fa878bbd07a4", 1, params);
+
+				//$('#loading').html('Спасибо!');
+			}
+		);
+	});
+</script>
+	<div class="text" style="margin-top: 100px;">
+		<img alt="logo" src="/img/dogm_2.jpg" align="middle" />
+		<img alt="logo" src="/img/logo.jpg" align="middle" style="margin-left: 50px;" />
+	</div>
+</div>
+
+</body>
+</html>
